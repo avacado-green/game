@@ -1,6 +1,7 @@
 import pygame
 
 class Bullet(pygame.sprite.Sprite):
+        """Инициализация пули"""
     def __init__(self, screen, gun):
         """Создание пули в позиции пушки"""
         super(Bullet, self).__init__()
