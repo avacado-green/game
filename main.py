@@ -3,7 +3,7 @@ import sys
 from gun import Gun
 from bullet import Bullet
 import controls
-
+"""Метод экрана"""
 def run():
     pygame.init()
     screen = pygame.display.set_mode((750, 800))
@@ -11,7 +11,7 @@ def run():
     bg_color = (0, 0, 0)
     gun = Gun(screen)
     bullets = pygame.sprite.Group()
-
+"""Событие"""
     while True:
         controls.events(gun, screen, bullets)
         gun.update_gun()
